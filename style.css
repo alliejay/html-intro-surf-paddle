@@ -1,0 +1,422 @@
+/*GENERAL*/
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: .95em;
+  letter-spacing: .1em;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+h1 {
+  color: #0A3351;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 4em;
+}
+
+h4 {
+  color: #206BB2;
+  margin: 35px 0 0 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+h5 {
+  display: inline-block;
+  color: #206BB2;
+  margin: 15px 0 0 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+h6 {
+  color: lightgrey;
+  text-decoration: underline;
+  font-size: .65em;
+  display: inline-block;
+  margin: 15px 0 0 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a:link {
+  color: lightgrey;
+}
+
+/*HEADER*/
+
+header {
+  width: 100%;
+  height: 400px;
+  background:
+    /* top, transparent blue */
+    linear-gradient(
+      rgba(30, 102, 175, 0.6),
+      rgba(30, 102, 175, 0.6)
+    ),
+    /* bottom, image */
+    url(img/waves.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #0A3351;
+}
+
+header a:link {
+  color: #0A3351;
+  text-decoration: none;
+}
+
+#logo img {
+  width: 40px;
+}
+
+#logo {
+  position: relative;
+  left: 100px;
+  top: 20px;
+}
+
+#logo img, #logo a {
+  vertical-align: middle;
+}
+
+.topnav {
+  position: relative;
+  left: 900px;
+  top: -20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+#mag {
+  display: inline-block;
+  width: 15px;
+  position: relative;
+  left: 900px;
+  top: -20px;
+}
+
+header p {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+#title {
+  font-size: 6em;
+  color: white;
+  padding-top: 10px;
+  margin-bottom: -20px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* MAIN CONTENT AREA */
+
+.container h1 {
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  color: grey;
+}
+
+.container > section {
+  width: 60%;
+  vertical-align: top;
+  margin-right: 50px;
+}
+
+.container p {
+  margin-top: 35px;
+  line-height: 175%;
+  font-weight: 100;
+}
+
+blockquote {
+  font-size: 2em;
+  border-left: 2px solid lightgrey;
+  padding: 10px;
+  text-align: left;
+  margin: 0;
+  color: #206BB2;
+}
+
+.container aside {
+  vertical-align: top;
+  width: 30%;
+  margin-left: 20px;
+}
+
+section, aside {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+aside h5 {
+  font-size: 1.25em;
+}
+
+#paddle {
+  background:
+    /* top, transparent blue */
+    linear-gradient(
+      rgba(30, 102, 175, 0.6),
+      rgba(30, 102, 175, 0.6)
+    ),
+    /* bottom, image */
+    url(img/paddleboarding.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    margin: 50px 0 20px 0;
+    position: relative;
+}
+
+#paddle:hover {
+  background-image: url(img/paddleboarding.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+section#paddle a.text {
+  position: absolute;
+  bottom: -20px;
+  left: 195px;
+}
+
+aside {
+  margin-top: 60px;
+  text-align: center;
+  color: lightgrey;
+  font-size: .75em;
+}
+
+#side {
+  text-align:left;
+  margin: 0;
+}
+
+aside ul {
+  padding-left: 0px;
+}
+
+aside ul a {
+  text-decoration: none;
+}
+
+aside li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+/* AUTHOR PHOTOS */
+
+.authorpic {
+  border-radius: 100%;
+  display: inline-block;
+  margin: 15px 0 0 0;
+  background:
+    /* top, transparent blue */
+    linear-gradient(
+      rgba(30, 102, 175, 0.5),
+      rgba(30, 102, 175, 0.5)
+    ),
+    /* bottom, image */
+    url(img/ironyardphoto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#authorpic1 {
+  width: 25px;
+  height: 25px;
+}
+
+#authorpic2 {
+  width: 100px;
+  height: 100px;
+}
+
+.authorpic:hover {
+  background-image: url(img/ironyardphoto.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+section.authorpic, h5, h6 {
+  vertical-align: middle;
+}
+
+/* BOTTOM PICTURES */
+
+.bottom {
+  -webkit-columns: 4;
+  -moz-columns: 4;
+  columns: 4;
+  -webkit-column-gap: 0;
+  -moz-column-gap: 0;
+  column-gap: 0;
+  -webkit-column-rule: 0;
+  -moz-column-rule: 0;
+  column-rule: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.25em;
+  color: #0A3351;
+}
+
+.col4 {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 330px;
+  display: inline-block;
+  position: relative;
+}
+
+section.col4  p.text{
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+ul, menu, dir {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#pic1 {
+  background:
+    /* top, transparent blue */
+    linear-gradient(
+      rgba(30, 102, 175, 0.6),
+      rgba(30, 102, 175, 0.6)
+    ),
+    /* bottom, image */
+    url(img/kellyslater.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#pic2 {
+  background:
+    /* top, transparent blue */
+    linear-gradient(
+      rgba(30, 102, 175, 0.6),
+      rgba(30, 102, 175, 0.6)
+    ),
+    /* bottom, image */
+    url(img/beers.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#pic3 {
+  background:
+    /* top, transparent blue */
+    linear-gradient(
+      rgba(30, 102, 175, 0.6),
+      rgba(30, 102, 175, 0.6)
+    ),
+    /* bottom, image */
+    url(img/zg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#pic4 {
+  background:
+    /* top, transparent blue */
+    linear-gradient(
+      rgba(30, 102, 175, 0.6),
+      rgba(30, 102, 175, 0.6)
+    ),
+    /* bottom, image */
+    url(img/booze.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* HOVER STATE */
+
+#pic1:hover {
+  color: white;
+  background-image: url(img/kellyslater.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#pic2:hover {
+  color: white;
+  background-image: url(img/beers.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#pic3:hover {
+  color: white;
+  background-image: url(img/zg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#pic4:hover {
+  color: white;
+  background-image: url(img/booze.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* FOOTER */
+
+.col2 {
+  width: 49%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #0A3351;
+  color: #B2C0CA;
+  margin-top: -10px;
+  font-size: .75em;
+}
+
+footer img, footer p {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
