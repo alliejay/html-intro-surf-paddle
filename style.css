@@ -153,6 +153,90 @@ blockquote {
   color: #206BB2;
 }
 
+.options {
+  display: inline-block;
+  width: 165px;
+  height: auto;
+  color: white;
+  background-color: #a3b3af;
+}
+
+.options p {
+  font-family: 'Helvetica', sans-serif;
+  font-size: .9em;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.options:hover {
+  background: linear-gradient(
+    rgba(30, 102, 175, 0.6),
+    rgba(30, 102, 175, 0.6)
+  );
+}
+
+#comments {
+  width: 30px;
+  height: 25px;
+  background-image: url(img/comments.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#comments, #comments > p {
+  vertical-align: middle;
+}
+
+#comments:hover {
+    width: 30px;
+    height: 25px;
+    background-image: url(img/comments2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#readLater {
+  width: 30px;
+  height: 25px;
+  background-image: url(img/readlater.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#readLater, #readLater > p {
+  vertical-align: middle;
+}
+
+#readLater:hover {
+    width: 30px;
+    height: 25px;
+    background-image: url(img/readlater2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#share {
+  width: 30px;
+  height: 25px;
+  background-image: url(img/share.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#share, #share > p {
+  vertical-align: middle;
+}
+
+#share:hover {
+    width: 30px;
+    height: 25px;
+    background-image: url(img/share2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .container aside {
   vertical-align: top;
   width: 30%;
@@ -280,6 +364,8 @@ section.authorpic, h5, h6 {
   font-size: 2.25em;
   color: #0A3351;
 }
+
+/* ^^^ MAY NOT WORK ON IE ^^^ */
 
 .col4 {
   width: 100%;
