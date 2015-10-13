@@ -51,6 +51,10 @@ a:link {
   color: lightgrey;
 }
 
+a:visited {
+  color: #0A3351;
+}
+
 /*HEADER*/
 
 header {
@@ -77,6 +81,11 @@ header a:link {
 
 #logo img {
   width: 40px;
+  display: inline;
+}
+
+#logo p {
+  display: inline;
 }
 
 #logo {
@@ -85,7 +94,7 @@ header a:link {
   top: 20px;
 }
 
-#logo img, #logo a {
+#logo img, #logo p {
   vertical-align: middle;
 }
 
@@ -100,10 +109,16 @@ header a:link {
 
 #mag {
   display: inline-block;
-  width: 15px;
+  width: 23px;
   position: relative;
   left: 900px;
-  top: -20px;
+  top: -18px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
 
 header p {
@@ -130,6 +145,8 @@ header p {
   width: 80%;
   margin: 0 auto;
   color: grey;
+  padding-bottom: 50px;
+  border-bottom: 1px solid lightgrey;
 }
 
 .container > section {
@@ -176,6 +193,8 @@ blockquote {
     rgba(30, 102, 175, 0.6)
   );
 }
+
+/* OPTION BUTTONS */
 
 #comments {
   width: 30px;
@@ -236,6 +255,8 @@ blockquote {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* ASIDE */
 
 .container aside {
   vertical-align: top;
@@ -301,6 +322,10 @@ aside ul {
 
 aside ul a {
   text-decoration: none;
+}
+
+aside a:visited {
+  color: grey;
 }
 
 aside li {
